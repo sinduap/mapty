@@ -13,8 +13,6 @@ class Workout {
   id = this.date.getTime() + '';
 
   constructor(coords, distance, duration) {
-    // this.date = new Date();
-    // this.id = this.date.getTime();
     this.coords = coords; // [lat, lng]
     this.distance = distance; // km
     this.duration = duration; // min
@@ -175,8 +173,6 @@ class App {
 
     // Add new object to workout array
     this.#workouts.push(workout);
-
-    console.log(workout);
 
     // Render workout on map as marker
     this._renderWorkoutMarker(workout);
